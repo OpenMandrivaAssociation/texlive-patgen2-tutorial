@@ -1,3 +1,9 @@
+# revision 16490
+# category Package
+# catalog-ctan /info/patgen2
+# catalog-date 2009-12-24 15:14:53 +0100
+# catalog-license gpl
+# catalog-version undef
 Name:		texlive-patgen2-tutorial
 Version:	20091224
 Release:	1
@@ -21,6 +27,7 @@ hyphenation patterns for wide ranges of languages.
 %files
 %doc %{_texmfdistdir}/doc/support/patgen2-tutorial/patgen2.pdf
 %doc %{_texmfdistdir}/doc/support/patgen2-tutorial/patgen2.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -31,3 +38,5 @@ hyphenation patterns for wide ranges of languages.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
