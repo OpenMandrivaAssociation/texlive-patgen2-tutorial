@@ -16,8 +16,6 @@ Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/patgen2-tutorial.
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
 
 %description
 This document describes the use of Patgen 2 to create
@@ -27,7 +25,6 @@ hyphenation patterns for wide ranges of languages.
 %files
 %doc %{_texmfdistdir}/doc/support/patgen2-tutorial/patgen2.pdf
 %doc %{_texmfdistdir}/doc/support/patgen2-tutorial/patgen2.tex
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -38,5 +35,3 @@ hyphenation patterns for wide ranges of languages.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
