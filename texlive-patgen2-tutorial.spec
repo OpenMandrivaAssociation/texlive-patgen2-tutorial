@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-patgen2-tutorial
 Version:	20091224
-Release:	9
+Release:	10
 Summary:	A tutorial on the use of Patgen 2
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/patgen2
