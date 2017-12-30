@@ -5,8 +5,8 @@
 # catalog-license gpl
 # catalog-version undef
 Name:		texlive-patgen2-tutorial
-Version:	20091224
-Release:	10
+Version:	20170414
+Release:	1
 Summary:	A tutorial on the use of Patgen 2
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/patgen2
