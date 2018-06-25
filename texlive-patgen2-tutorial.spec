@@ -5,7 +5,7 @@
 # catalog-license gpl
 # catalog-version undef
 Name:		texlive-patgen2-tutorial
-Version:	20170414
+Version:	20180303
 Release:	1
 Summary:	A tutorial on the use of Patgen 2
 Group:		Publishing
