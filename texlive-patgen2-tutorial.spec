@@ -1,6 +1,6 @@
 Name:		texlive-patgen2-tutorial
 Version:	58841
-Release:	1
+Release:	2
 Summary:	A tutorial on the use of Patgen 2
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/patgen2
