@@ -3,7 +3,7 @@ Version:	58841
 Release:	2
 Summary:	A tutorial on the use of Patgen 2
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/info/patgen2
+URL:		https://www.ctan.org/tex-archive/info/patgen2
 License:	GPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/patgen2-tutorial.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/patgen2-tutorial.doc.r%{version}.tar.xz
