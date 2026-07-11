@@ -1,30 +1,21 @@
-Name:		texlive-patgen2-tutorial
-Version:	58841
-Release:	2
+%global tl_name patgen2-tutorial
+%global tl_revision 58841
+
+Name:		texlive-%{tl_name}
+Epoch:		1
+Version:	1.1
+Release:	%{tl_revision}.1
 Summary:	A tutorial on the use of Patgen 2
 Group:		Publishing
-URL:		https://www.ctan.org/tex-archive/info/patgen2
-License:	GPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/patgen2-tutorial.r%{version}.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/patgen2-tutorial.doc.r%{version}.tar.xz
+URL:		https://www.ctan.org/tex-archive/info/patgen2-tutorial
+License:	lppl1.3c
+Source0:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/patgen2-tutorial.r%{tl_revision}.tar.xz
+Source1:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/patgen2-tutorial.doc.r%{tl_revision}.tar.xz
 BuildArch:	noarch
-BuildRequires:	texlive-tlpkg
-Requires(pre):	texlive-tlpkg
+BuildSystem:	texlive
+Provides:	texlive(%{tl_name}) = %{tl_revision}
 
 %description
-This document describes the use of Patgen 2 to create
-hyphenation patterns for wide ranges of languages.
+This document describes the use of Patgen 2 to create hyphenation
+patterns for wide ranges of languages.
 
-#-----------------------------------------------------------------------
-%files
-%doc %{_texmfdistdir}/doc/support/patgen2-tutorial
-
-#-----------------------------------------------------------------------
-%prep
-%autosetup -p1 -c -a1
-
-%build
-
-%install
-mkdir -p %{buildroot}%{_texmfdistdir}
-cp -fpar doc %{buildroot}%{_texmfdistdir}
